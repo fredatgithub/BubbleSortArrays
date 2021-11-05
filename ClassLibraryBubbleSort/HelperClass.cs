@@ -54,9 +54,11 @@ namespace ClassLibraryBubbleSort
         {
           if (array[j, 0].Length > array[j + 1, 0].Length)
           {
+            // swap first column
             string tmp = array[j, 0];
             array[j, 0] = array[j + 1, 0];
             array[j + 1, 0] = tmp;
+            // swap second column
             tmp = array[j, 1];
             array[j, 1] = array[j + 1, 1];
             array[j + 1, 1] = tmp;
